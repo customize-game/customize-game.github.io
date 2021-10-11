@@ -10,7 +10,6 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(4),
     margin: '10px',
-    maxWidth: 500,
   },
   large: {
     width: theme.spacing(10),
