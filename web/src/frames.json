@@ -1,0 +1,62 @@
+[{
+        "name": "片手剣",
+        "statuses": [{
+                "name": "atk",
+                "val": 30
+            },
+            {
+                "name": "speed",
+                "val": 70
+            }
+        ]
+    },
+    {
+        "name": "ブースター",
+        "statuses": [{
+                "name": "speed",
+                "val": 90
+            },
+            {
+                "name": "energy",
+                "val": 15
+            }
+        ]
+    }, {
+        "name": "片手銃",
+        "statuses": [{
+                "name": "speed",
+                "val": 90
+            },
+            {
+                "name": "atk",
+                "val": 10
+            }
+        ]
+    }, {
+        "name": "盾",
+        "statuses": [{
+            "name": "def",
+            "val": 90
+        }]
+    }, {
+        "name": "装甲",
+        "statuses": [{
+            "name": "def",
+            "val": 40
+        }]
+    }, {
+        "name": "双剣",
+        "statuses": [{
+                "name": "atk",
+                "val": 30
+            },
+            {
+                "name": "speed",
+                "val": 90
+            }
+        ]
+    }, {
+        "name": "バックパック",
+        "statuses": []
+    }
+]
