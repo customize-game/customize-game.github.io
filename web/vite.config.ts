@@ -25,7 +25,7 @@ export default defineConfig({
     rollupOptions: {
       external: ['@vitejs/plugin-legacy'],
     },
-    assetsDir: "assets"
+    assetsDir: "introduction/assets"
   },
   define: {
     'process.env': {},
