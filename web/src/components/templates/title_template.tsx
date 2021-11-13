@@ -1,57 +1,14 @@
 import React from 'react'
 
-import {
-  createMuiTheme, makeStyles, createStyles, Theme,
-} from '@material-ui/core/styles'
-import * as colors from '@material-ui/core/colors'
-
-import Card from '@material-ui/core/Card'
-import CardContent from '@material-ui/core/CardContent'
-import Container from '@material-ui/core/Container'
-import Grid from '@material-ui/core/Grid'
-import Typography from '@material-ui/core/Typography'
-
+import Card from '@mui/material/Card'
+import CardContent from '@mui/material/CardContent'
+import Container from '@mui/material/Container'
+import Grid from '@mui/material/Grid'
+import Typography from '@mui/material/Typography'
 
 /* organisms */
 import Navbar from '../organisms/Navbar'
 import Footer from '../organisms/Footer'
-
-
-const theme = createMuiTheme({
-  typography: {
-    fontFamily: [
-      'Noto Sans JP',
-      'Lato',
-      '游ゴシック Medium',
-      '游ゴシック体',
-      'Yu Gothic Medium',
-      'YuGothic',
-      'ヒラギノ角ゴ ProN',
-      'Hiragino Kaku Gothic ProN',
-      'メイリオ',
-      'Meiryo',
-      'ＭＳ Ｐゴシック',
-      'MS PGothic',
-      'sans-serif',
-    ].join(','),
-  },
-  palette: {
-    primary: { main: colors.blue[800] }, // テーマの色
-  },
-})
-
-const useStyles = makeStyles((theme: Theme) => createStyles({
-  root: {
-    background: '#cccccc',
-  },
-  link: {
-    textDecoration: 'none',
-    color: theme.palette.text.secondary,
-  },
-  pageTitle: {
-    margin: theme.spacing(3),
-  }
-}))
 
 export interface TitleTemplateProps {
   children: React.ReactNode
@@ -64,12 +21,11 @@ const TitleTemplate: React.FC<TitleTemplateProps> = ({
   title,
   updateAt,
 }) => {
-  const classes = useStyles()
   return (
-    <div className={classes.root}>
+    <div >
       <Navbar />
       <Container fixed>
-        <Grid container spacing={2} justify="center">
+        <Grid container spacing={2} justifyContent="center">
           <Grid item xs={12}>
             <Card>
               <CardContent>
@@ -81,7 +37,6 @@ const TitleTemplate: React.FC<TitleTemplateProps> = ({
                       variant="h5"
                       color="inherit"
                       noWrap
-                      className={classes.pageTitle}
                     >
                       {title}
                     </Typography>
@@ -101,7 +56,6 @@ const TitleTemplate: React.FC<TitleTemplateProps> = ({
                       variant="h5"
                       color="inherit"
                       noWrap
-                      className={classes.pageTitle}
                     >
                       更新日：{updateAt}
                     </Typography>
@@ -114,7 +68,7 @@ const TitleTemplate: React.FC<TitleTemplateProps> = ({
             </Card>
           </Grid>
         </Grid>
-        <Footer description="" />
+        <Footer />
       </Container>
     </div>
   )

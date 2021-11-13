@@ -1,6 +1,6 @@
 import React from 'react'
-import Grid from '@material-ui/core/Grid'
-import Typography from '@material-ui/core/Typography'
+import Grid from '@mui/material/Grid'
+import Typography from '@mui/material/Typography'
 
 /* templates */
 import TitleTemplate from '../templates/title_template'
@@ -11,11 +11,11 @@ import Part from '../organisms/Part'
 import Template from '../organisms/Template'
 
 // フレーム一覧
-import frames from '../../frames.json'
+import frames from '../../data/frames.json'
 // パーツ一覧
-import parts from '../../parts.json'
+import parts from '../../data/parts.json'
 // テンプレート一覧
-import templates from '../../templates.json'
+import templates from '../../data/templates.json'
 
 /**
  * パーツ／フレーム紹介画面

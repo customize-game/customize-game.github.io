@@ -1,5 +1,4 @@
 import React from 'react'
-import Typography from '@material-ui/core/Typography'
 
 /* templates */
 import TitleTemplate from '../templates/title_template'

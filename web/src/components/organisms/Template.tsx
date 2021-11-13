@@ -1,23 +1,10 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
 
-import Avatar from '@material-ui/core/Avatar'
-import Grid from '@material-ui/core/Grid'
-import Paper from '@material-ui/core/Paper'
-import Typography from '@material-ui/core/Typography'
+import Avatar from '@mui/material/Avatar'
+import Grid from '@mui/material/Grid'
+import Paper from '@mui/material/Paper'
+import Typography from '@mui/material/Typography'
 
-const useStyles = makeStyles((theme) => ({
-  paper: {
-    padding: theme.spacing(4),
-    margin: '10px',
-    maxWidth: 500,
-  },
-  large: {
-    width: theme.spacing(10),
-    height: theme.spacing(10),
-    display: 'inline-block',
-  },
-}))
 export interface TemplateProps {
   is_reverse: boolean
   image_path?: string
@@ -28,14 +15,13 @@ const Template: React.FC<TemplateProps> = ({
   image_path,
   template_name,
 }) => {
-  const classes = useStyles()
   return (
-    <Paper className={classes.paper}>
+    <Paper >
       <Grid container direction={is_reverse ? "row-reverse" : "row"}>
         {image_path ?
           <Grid item xs={12} sm={6}>
             <Typography gutterBottom variant="h5" align="center">
-              <Avatar variant="rounded" className={classes.large} src={image_path} />
+              <Avatar variant="rounded"  src={image_path} />
             </Typography>
           </Grid>
           : null}

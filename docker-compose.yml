@@ -8,5 +8,5 @@ services:
     volumes:
       - ./web/:/usr/src/web
     ports:
-      - 3333:3000
+      - 3333:3333
     tty: true

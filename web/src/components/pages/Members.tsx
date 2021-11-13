@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Grid from '@material-ui/core/Grid'
-import Typography from '@material-ui/core/Typography'
+import Grid from '@mui/material/Grid'
+import Typography from '@mui/material/Typography'
 
 /* templates */
 import TitleTemplate from '../templates/title_template'
@@ -12,7 +12,7 @@ import Profile from '../organisms/Profile'
 const MembersPage: React.FC = () => {
   return (
     <TitleTemplate title="メンバー紹介" updateAt="2021/10/11">
-      <Grid container justify="center">
+      <Grid container justifyContent="center">
         <Grid item xs={12}>
           <Profile is_reverse={true} image_path="https://avatars3.githubusercontent.com/u/24400215?s=96&v=4" member_name="Shass Beleth">
             <Typography gutterBottom variant="body1" align="center" >

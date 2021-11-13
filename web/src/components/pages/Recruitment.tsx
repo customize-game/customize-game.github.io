@@ -1,30 +1,22 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
+import { makeStyles } from '@mui/styles'
 
-import CardMedia from '@material-ui/core/CardMedia'
-import CssBaseline from '@material-ui/core/CssBaseline'
-import Grid from '@material-ui/core/Grid'
-import Paper from '@material-ui/core/Paper'
-import Typography from '@material-ui/core/Typography'
+import CardMedia from '@mui/material/CardMedia'
+import Grid from '@mui/material/Grid'
+import Paper from '@mui/material/Paper'
+import Typography from '@mui/material/Typography'
 
 /* templates */
 import TitleTemplate from '../templates/title_template'
 
-const useStyles = makeStyles((theme) => ({
-  paper: {
-    padding: theme.spacing(4),
-    margin: '10px',
-  },
-}))
 /**
  * メンバー募集画面
  */
-const WantedPage: React.FC = () => {
-  const classes = useStyles()
+const RecruitmentPage: React.FC = () => {
   return (
     <div>
       <TitleTemplate title="ゲーム作成メンバー募集中！" updateAt="2021/08/23">
-        <Grid container justify="center">
+        <Grid container justifyContent="center">
           <Grid item xs={12}>
             <Typography align="center" gutterBottom variant="h5">
               一緒にゲームを作りたい方、随時募集中です！
@@ -34,7 +26,7 @@ const WantedPage: React.FC = () => {
             </Typography>
           </Grid>
           <Grid item xs={12}>
-            <Paper className={classes.paper}>
+            <Paper >
               <Typography gutterBottom variant="h5" align="center">
                 タスク管理
                 <CardMedia>
@@ -47,7 +39,7 @@ const WantedPage: React.FC = () => {
             </Paper>
           </Grid>
           <Grid item xs={12}>
-            <Paper className={classes.paper}>
+            <Paper >
               <Typography gutterBottom variant="h5" align="center">
                 ミーティング
                 <CardMedia>
@@ -60,7 +52,7 @@ const WantedPage: React.FC = () => {
             </Paper>
           </Grid>
           <Grid item xs={12}>
-            <Paper className={classes.paper}>
+            <Paper >
               <Typography align="center" gutterBottom variant="h5">
                 使用するプログラミング言語／ライブラリ等
                 <CardMedia>
@@ -82,7 +74,7 @@ const WantedPage: React.FC = () => {
             </Paper>
           </Grid>
           <Grid item xs={12}>
-            <Paper className={classes.paper}>
+            <Paper >
               <Typography align="center" gutterBottom variant="h5">
                 ソースコード管理
                 <CardMedia>
@@ -92,7 +84,7 @@ const WantedPage: React.FC = () => {
             </Paper>
           </Grid>
           <Grid item xs={12}>
-            <Paper className={classes.paper}>
+            <Paper >
               <Typography align="center" gutterBottom variant="h5">
                 アセット管理(BGM/Graphic等)
                 <CardMedia>
@@ -108,4 +100,4 @@ const WantedPage: React.FC = () => {
   )
 }
 
-export default WantedPage
+export default RecruitmentPage

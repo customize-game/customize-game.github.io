@@ -1,17 +1,7 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
-
-import Typography from '@material-ui/core/Typography'
-
-const useStyles = makeStyles((theme) => ({
-  footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(2, 0),
-  },
-}))
+import Typography from '@mui/material/Typography'
 
 const Construction: React.FC = () => {
-  const classes = useStyles();
   return (
     <div>
       <Typography variant="h6" align="center">

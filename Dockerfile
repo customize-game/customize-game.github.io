@@ -1,2 +1,2 @@
-FROM node:16.6
+FROM node:16.11
 WORKDIR /usr/src/web
